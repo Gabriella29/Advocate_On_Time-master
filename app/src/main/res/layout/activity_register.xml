@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mildr.advocate_on_time.RegisterActivity">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Email"
+        android:layout_centerHorizontal="true"
+        android:ems="12"
+        android:id="@+id/Gender"
+        android:hint="Geslacht"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Gender"
+        android:layout_alignLeft="@+id/Gender"
+        android:layout_alignStart="@+id/Gender"
+        android:ems="12"
+        android:id="@+id/Kantoor"
+        android:hint="Kantoor"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Kantoor"
+        android:layout_alignLeft="@+id/Kantoor"
+        android:layout_alignStart="@+id/Kantoor"
+        android:ems="12"
+        android:hint="Adres"
+        android:id="@+id/Adres"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <Button
+        android:text="Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/registerUserButton"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="registerUser"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Adres"
+        android:layout_alignLeft="@+id/Adres"
+        android:layout_alignStart="@+id/Adres"
+        android:ems="12"
+        android:hint="Telefoon nummer"
+        android:id="@+id/Phone"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:id="@+id/Email"
+        android:hint="E-mail"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/Gender"
+        android:layout_alignStart="@+id/Gender" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:id="@+id/LastName"
+        android:hint="Naam"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_above="@+id/Email"
+        android:layout_alignLeft="@+id/Email"
+        android:layout_alignStart="@+id/Email" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/FirstName"
+        android:hint="Voornamen"
+        android:ems="12"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_above="@+id/Email"
+        android:layout_alignLeft="@+id/LastName"
+        android:layout_alignStart="@+id/LastName"
+        android:layout_marginBottom="36dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:id="@+id/UserName"
+        android:hint="Gebruikersnaam"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/ConfirmPassword"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="12"
+        android:id="@+id/Password"
+        android:hint="Wachtwoord"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_below="@+id/UserName"
+        android:layout_alignStart="@+id/UserName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:id="@+id/ConfirmPassword"
+        android:ems="12"
+        android:hint="Wachtwoord bevestigen"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_below="@+id/Password"
+        android:layout_alignStart="@+id/FirstName" />
+
+</RelativeLayout>
+
